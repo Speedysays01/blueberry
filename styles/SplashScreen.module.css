@@ -1,0 +1,31 @@
+/* components/SplashScreen.module.css */
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #eaeafb; /* same as site bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.logoWrap {
+  position: relative;
+}
+
+.circleImage {
+  z-index: 1;
+  height: 20rem;
+  width: 20rem;
+}
+
+.logoImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}

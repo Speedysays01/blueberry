@@ -1,0 +1,120 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100vw;
+  max-height: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+ 
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 6rem;
+  width: auto;
+  border-right: 25em;
+}
+
+.menuIcon {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  
+}
+
+.navLinks {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  list-style: none;
+  transition: right 0.3s ease-in-out;
+  z-index: 200;
+  padding-top: 8rem;
+ margin-top: -2rem;
+
+}
+
+.navLinks li {
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+.navLink {
+  font-size: 1.3rem;
+  color: #3d2c4a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #4A4E91;
+  text-decoration: underline;
+}
+
+.sidebarOpen {
+  right: 0;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.logo{
+    display: none;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .menuIcon,
+  .closeIcon {
+    display: none;
+  }
+
+  .logo{
+    display: block;
+    height: 5rem;
+    width: auto;
+  }
+
+
+  .navLinks {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .navLinks li {
+    margin: 0 1.2rem;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+}
