@@ -50,11 +50,11 @@ export default function Home() {
 
 
 <div className={styles.text}>
-          {/* <motion.div
+          <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-          > */}
+          >
             <Image
               src="/assets/logo.png"
               alt="BerryLand Logo"
@@ -62,7 +62,7 @@ export default function Home() {
               height={200}
               className={styles.logoImage}
             />
-          {/* </motion.div> */}
+           </motion.div> 
 
           <h2 className={styles.tagline}>Growing Legacy, One Berry at a Time.</h2>
           </div>
@@ -70,9 +70,9 @@ export default function Home() {
 
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
           className={styles.contact}
         >
           <a href="/contact" className={styles.contactBtn}>Contact Us</a>
