@@ -23,8 +23,8 @@
   z-index: 2;
   border-radius: 50%;
   object-fit: contain;
-  margin-top: -6rem;
-  width: 20rem;
+  
+  width: 30rem;
   height: auto;
   
 }
@@ -33,19 +33,18 @@
 .top {
   position: absolute;
   margin-top: -1.5rem;
-  width: 120%;
-  height: auto;
+  width: 100vw;
+  height: 95%;
   /* top: -6rem; */
-  object-fit: contain;
+  
   z-index: 1;
 }
 
 /* Decorative Middle Branch */
 .middle {
   width: 100%;
-  height: auto;
+  height: 80%;
   margin-top: 2rem;
-  object-fit: contain;
   z-index: 1;
   /* margin-top: -10rem; */
   position: relative;
@@ -54,7 +53,7 @@
 
 /* Contact Button */
 .contact {
-  margin-top: -2rem;
+  margin-top: -8rem;
 }
 
 .contactBtn {
@@ -69,7 +68,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   z-index: 1;
-  margin-top: -8rem;
+  margin-top: -15rem;
   position: relative;
 }
 
@@ -168,11 +167,50 @@
     font-size: 2rem;
   }
 
-  .contactBtn{
-    font-size: 1.2rem;
+  .logoImage{
+    width: 20rem;
+    margin-top: -6rem;
   }
+
+  .contactBtn {
+  padding: 0.75rem 2rem;
+  background-color: #5D5D9C;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  margin-top: -8rem;
+  position: relative;
+}
 
   .aboutSection{
     margin-top: -7.5rem;
   }
+
+  .top {
+  position: absolute;
+  margin-top: -1.5rem;
+  width: 120%;
+  height: auto;
+  /* top: -6rem; */
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Decorative Middle Branch */
+.middle {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  object-fit: contain;
+  z-index: 1;
+  /* margin-top: -10rem; */
+  position: relative;
+  margin-bottom: 2rem;
+}
 }
