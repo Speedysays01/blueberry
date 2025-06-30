@@ -38,14 +38,17 @@ export default function Home() {
       <main className={styles.centerHero}>
         
         <div className={styles.logoWrap}>
-          <Image
-            src="/assets/top.png"
+      
+         <Image
+            src="/assets/middle.png"
             alt="Berry circle wreath"
             width={500}
             height={500}
             className={styles.top}
           />
 
+
+<div className={styles.text}>
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -59,6 +62,9 @@ export default function Home() {
               className={styles.logoImage}
             />
           </motion.div>
+
+          <h2 className={styles.tagline}>Growing Legacy, One Berry at a Time.</h2>
+          </div>
         </div>
 
 
