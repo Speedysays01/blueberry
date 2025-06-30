@@ -39,11 +39,11 @@ export default function Home() {
         
         <div className={styles.logoWrap}>
           <Image
-            src="/assets/herocircle.png"
+            src="/assets/top.png"
             alt="Berry circle wreath"
             width={500}
             height={500}
-            className={styles.circleImage}
+            className={styles.top}
           />
 
           <motion.div
@@ -61,6 +61,7 @@ export default function Home() {
           </motion.div>
         </div>
 
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,8 +71,18 @@ export default function Home() {
           <a href="/contact" className={styles.contactBtn}>Contact Us</a>
         </motion.div>
 
+
+         <Image
+            src="/assets/middle.png"
+            alt="Berry circle wreath"
+            width={500}
+            height={500}
+            className={styles.middle}
+          />
+
+
         {/* ===== Infinite Scroll Row ===== */}
-        <div className={styles.scroller}>
+        {/* <div className={styles.scroller}>
           <div className={styles.scrollContent}>
             {repeatedImages.map((src, index) => (
               <div className={styles.scrollItem} key={index}>
@@ -79,7 +90,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </main>
 
       {/* ===== About Section ===== */}

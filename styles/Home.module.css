@@ -1,12 +1,11 @@
 .centerHero {
-  /* height: 100vh; */
   width: 100vw;
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-flex-direction: column;
-overflow-x: hidden;
+  overflow-x: hidden;
+  position: relative;
+  
 }
 
 .logoWrap {
@@ -16,16 +15,7 @@ overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-}
 
-.circleImage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: 1;
-  /* animation: rotateCircle 40s linear infinite; */
 }
 
 .logoImage {
@@ -33,13 +23,43 @@ overflow-x: hidden;
   z-index: 2;
   border-radius: 50%;
   object-fit: contain;
+  margin-top: -6rem;
+  width: 20rem;
+  height: auto;
+  
 }
 
+/* Decorative Top Branch */
+.top {
+  position: absolute;
+  margin-top: -1.5rem;
+  width: 120%;
+  height: auto;
+  /* top: -6rem; */
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Decorative Middle Branch */
+.middle {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  object-fit: contain;
+  z-index: 1;
+  /* margin-top: -10rem; */
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Contact Button */
+.contact {
+  margin-top: -2rem;
+}
 
 .contactBtn {
-  /* margin-top: 2rem; */
   padding: 0.75rem 2rem;
-  background-color: #5D5D9C; /* Blueberry tone */
+  background-color: #5D5D9C;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -48,6 +68,9 @@ overflow-x: hidden;
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
+  z-index: 1;
+  margin-top: -8rem;
+  position: relative;
 }
 
 .contactBtn:hover {
@@ -55,79 +78,25 @@ overflow-x: hidden;
   transform: scale(1.05);
 }
 
-@keyframes rotateCircle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-
-@media (max-width: 768px) {
-
-
-.strip{
-  margin-top: 2rem
-}
-
-.logoWrap {
-    width: 20rem;
-    height: 20rem;
-   margin-top: 4rem;
-    /* margin-top: -10rem; */
-  }
-
-  .contact {
-    width: 70%;
-    text-align: center;
-    margin-top: 2rem;
-    
-  }
-
-  .scrollItem{
-    width: 10px;
-    height: 10px;
-  }
-
-  .circleImage{
-
-    width: 20rem;
-    height: 20rem;
-    
-  }
-}
-
-
-
-
-
-
-
-
-
-
+/* Scroller */
 .scroller {
   width: 100vw;
   overflow: hidden;
   white-space: nowrap;
   height: 80px;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .scrollContent {
   display: inline-flex;
-  animation: scrollLoop 80s linear infinite;
+  animation: scrollLoop 40s linear infinite;
   gap: 2rem;
 }
 
 .scrollItem {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,32 +113,25 @@ overflow-x: hidden;
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-33.333%);
+    transform: translateX(-100%);
   }
 }
 
-
-
-
-
-
+/* About Section */
 .aboutSection {
   padding: 4rem 2rem;
-
   text-align: center;
 }
 
 .aboutContent {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: -6rem;
 }
 
 .aboutContent h2 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
-  color: #3a3a3a;
   color: #c94f7c;
   letter-spacing: 1px;
 }
@@ -179,4 +141,38 @@ overflow-x: hidden;
   line-height: 1.8;
   color: #444;
   margin-bottom: 1.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .logoWrap {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 6rem;
+  }
+
+  .top {
+    width: 130%;
+    top: -5rem;
+  }
+
+  .scrollItem {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact {
+    width: 20rem;
+    margin-top: -6.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .contactBtn{
+    font-size: 1.2rem;
+  }
+
+  .aboutSection{
+    margin-top: -7.5rem;
+  }
 }
