@@ -164,19 +164,19 @@
 
   .contact {
     width: 20rem;
-    margin-top: -5rem;
+    margin-top: -8rem;
     text-align: center;
     font-size: 2rem;
   }
 
   .logoImage{
     width: 20rem;
-    margin-top: -10rem;
+    margin-top: -14rem;
   }
 
   .contactBtn {
   padding: 0.5rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -184,7 +184,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   z-index: 1;
-  margin-top: -7rem;
+  margin-top: -7.5rem;
   position: relative;
   border: solid;
 }
