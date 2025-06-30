@@ -38,7 +38,7 @@ export default function Home() {
       <main className={styles.centerHero}>
         
         <div className={styles.logoWrap}>
-      
+  
          <Image
             src="/assets/middle.png"
             alt="Berry circle wreath"
@@ -46,14 +46,15 @@ export default function Home() {
             height={500}
             className={styles.top}
           />
+          
 
 
 <div className={styles.text}>
-          <motion.div
+          {/* <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-          >
+          > */}
             <Image
               src="/assets/logo.png"
               alt="BerryLand Logo"
@@ -61,7 +62,7 @@ export default function Home() {
               height={200}
               className={styles.logoImage}
             />
-          </motion.div>
+          {/* </motion.div> */}
 
           <h2 className={styles.tagline}>Growing Legacy, One Berry at a Time.</h2>
           </div>
