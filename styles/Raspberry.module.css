@@ -1,0 +1,98 @@
+.raspberryPage {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #a9445b;
+}
+
+.description {
+  margin: 1.5rem auto;
+  max-width: 600px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 320px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+  color: #842029;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #a9445b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #872b43;
+}
+
+.guideSection {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.guideSection h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.guideSection p {
+  max-width: 700px;
+  margin: 0.8rem auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+.scrollBtn {
+  margin-top: 2rem;
+  padding: 0.6rem 1.4rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.scrollBtn:hover {
+  background-color: #5a6268;
+}

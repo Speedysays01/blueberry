@@ -1,0 +1,48 @@
+.footer {
+  background-color: #f7f7f7;
+  background-color: #3d3d7a;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #6c5f5b;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #5d5d9c;
+    color: #d7d7ff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #3d3d7a;
+  color: white;
+  text-decoration: underline;
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: #999;
+}

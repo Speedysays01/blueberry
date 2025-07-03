@@ -1,0 +1,113 @@
+.blackberryPage {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #3a2e2e;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+
+.varietyCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card {
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 340px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #5d5d9c;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card button:hover {
+  background-color: #3d3d7a;
+}
+
+.chooseSection {
+  margin-top: 3rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chooseSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #3a3a3a;
+}
+
+.chooseSection p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.scrollBtn {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #5d5d9c;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.scrollBtn:hover {
+  background-color: #3d3d7a;
+}
+
+@media (min-width: 768px) {
+  .varietyCards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -64,7 +64,7 @@ export default function Home() {
             />
            </motion.div> 
 
-          <h2 className={styles.tagline}>Growing Legacy, One Berry at a Time.</h2>
+        
           </div>
         </div>
 

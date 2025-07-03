@@ -1,0 +1,61 @@
+.container {
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #4a4a7a;
+}
+
+.variety {
+  font-size: 1.5rem;
+  color: #3d3d7a;
+  margin-bottom: 0.5rem;
+  text-align: center;
+
+}
+
+.description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.varietyImageWrap {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.varietyImage {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.bulletList li {
+  margin-bottom: 0.6rem;
+}
